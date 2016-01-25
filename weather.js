@@ -9,7 +9,7 @@ $(function() {
     window.data = data;
     
     // Put your code here. Don't change any other code in this file. You will be sad.
-    var markup = "<p>The current weather is " + data.currently.summary + ", " + data.currently.temperature + " degrees Fahrenheit. The three day forecast is " + data.daily.summary;
+    var markup = "<p>The current weather is " + data.currently.summary + ", " + data.currently.temperature + " degrees Fahrenheit. Tomorrow it will be " + data.daily.data[1].summary + " The next day will be " + data.daily.data[2].summary + " In three days it will be " + data.daily.data[3].summary;
     // End of your code. No, really. Don't change anything below this, or above line 11.
 
     // Takes the contents of the "markup" variable (which should contain HTML) 
